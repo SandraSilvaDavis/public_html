@@ -1,0 +1,20 @@
+// Colors
+$primaryColor: #e0e7ed; // Light primary color
+$secondaryColor: #033860; // Dark secondary color
+$accentColor: #084060; // Accent color
+$greyColor: #111f66; // Grey color for text or backgrounds
+
+// Typography
+$defaultFont: 'Spline Sans', sans-serif; // Default font family
+$lightWeight: 300; // Light font weight
+$normalWeight: 500; // Normal font weight
+$leading: 1.5; // Line height (converted to a unitless value for better compatibility)
+$heavyWeight:700;// Heavy font weight
+
+// Spacing
+$gutter: 10px; // Default gutter size for spacing
+
+// Button Colors
+$buttonBackground: $secondaryColor; // Default button background color
+$buttonHoverBackground: lighten($secondaryColor, 10%); // Lighter hover color for buttons
+$buttonTextColor: white; // Button text color

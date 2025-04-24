@@ -1,0 +1,63 @@
+#theButton {
+    border:none;
+    background: none;
+    font-size: 2rem;
+    color:$secondaryColor;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+
+    &::before {content: "\2630";
+    }
+
+}//end #theButton
+#theButton.open::before {
+   content: "\2715";
+   font-size: 1.6rem;
+}//end #theButton.open
+#theNav  {
+    background-color: rgb(170, 206, 216);
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li a { 
+        color: $secondaryColor;
+        display: block;
+        padding: .75rem 2vw;
+        font-size: 14px;
+        text-decoration: none;
+        border-top: 1px solid rgba(0,0,0, .2);
+    }
+    li .active a {
+        background-color: rgb(160, 22, 25);
+    }
+    li a:hover {
+        background-color: rgba(0,0,0, .3);
+    }
+  
+    &.open {
+        height: auto;
+        
+    }
+
+}
+//Submenu Items///
+
+.parent>a::after {
+    content: "\25BC";
+    float: right;
+    font-size: .75rem;
+    color: $secondaryColor;
+   
+}
+.parent ul {
+    list-style: none;
+    padding: 0;
+    background-color: $primaryColor;
+    display: none;
+}
+.parent:hover ul {
+    display: block;
+}

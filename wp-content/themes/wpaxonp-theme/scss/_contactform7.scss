@@ -1,0 +1,41 @@
+$userInstructions: red;
+$userEntry: gray;
+$error: hotpink;
+$formwidth: 300px;
+
+.wpcf7-form-control {
+    width: $formwidth;
+    color: $userInstructions;
+    label: {display: block; margin-top: 1rem;}
+    span {display: block;}
+    input, select, textarea {
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: .5rem 5px;
+        color: $userEntry;
+        width: 100%;;
+    }
+    input[type="submit"] {
+      margin-top: 1rem;
+      width: $formwidth;
+      background: color #222;
+      color: white;
+      ;
+    }
+    .wpcf7-response-output {
+      text-align: left;
+      font-weight: &heavyWeight;
+      margin-top: 1rem;
+      color: #506f7b;
+      border-left: solid 4px #506f7b;
+      padding-left: .5rem;
+    }
+.wpcf7-not-valid-tip {
+    color: $error;
+    font-size: 90%;
+    font-size: .75rem;
+    text-align: right;
+}
+      
+    }
+    div.screen-reader-response {display: none;}

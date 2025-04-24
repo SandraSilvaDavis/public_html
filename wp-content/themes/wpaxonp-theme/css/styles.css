@@ -922,6 +922,47 @@ footer p.legal a {
   color: #033860;
 }
 
+.wpcf7-form-control {
+  width: 300px;
+  color: red;
+  label-display: block;
+  label-margin-top: 1rem;
+}
+.wpcf7-form-control span {
+  display: block;
+}
+.wpcf7-form-control input, .wpcf7-form-control select, .wpcf7-form-control textarea {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 0.5rem 5px;
+  color: gray;
+  width: 100%;
+}
+.wpcf7-form-control input[type=submit] {
+  margin-top: 1rem;
+  width: 300px;
+  background: color #222;
+  color: white;
+}
+.wpcf7-form-control .wpcf7-response-output {
+  text-align: left;
+  font-weight: .wpcf7-form-control .wpcf7-response-output heavyWeight;
+  margin-top: 1rem;
+  color: #506f7b;
+  border-left: solid 4px #506f7b;
+  padding-left: 0.5rem;
+}
+.wpcf7-form-control .wpcf7-not-valid-tip {
+  color: hotpink;
+  font-size: 90%;
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+div.screen-reader-response {
+  display: none;
+}
+
 @media only screen and (max-width: 34.9375rem) {
   #theButton {
     border: none;

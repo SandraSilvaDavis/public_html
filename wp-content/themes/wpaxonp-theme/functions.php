@@ -14,6 +14,7 @@ function disable_wp_auto_p( $content ) {
     return $content;
   }
   add_filter( 'the_content', 'disable_wp_auto_p', 0 );
+  add_filter('wpcf7_autop_or_not','__return_false');
 
 /* ADD A MENU BAR*/
 register_nav_menu('siteNavigation', 'Primary Navigation');

@@ -300,6 +300,10 @@ template {
   display: none;
 }
 
+/* Neutral color for labels */
+/* Neutral color for input text */
+/* Red for error messages */
+/* Full width for responsiveness */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -922,25 +926,17 @@ footer p.legal a {
   color: #033860;
 }
 
-/* Neutral color for labels */
-/* Neutral color for input text */
-/* Red for error messages */
-/* Full width for responsiveness */
-.wpcf7-form-control {
+.contact-form .wpcf7-form-control {
   width: 100%;
-  color: #333;
+  color: #0e0d0d;
 }
-.wpcf7-form-control label {
+.contact-form .wpcf7-form-control label {
   display: block;
   margin-top: 1rem;
   font-weight: bold;
-  color: #333; /* Label color */
+  color: #0e0d0d; /* Label color */
 }
-.wpcf7-form-control span {
-  display: block;
-  margin-bottom: 0.5rem; /* Add spacing between label and input */
-}
-.wpcf7-form-control input, .wpcf7-form-control select, .wpcf7-form-control textarea {
+.contact-form .wpcf7-form-control input, .contact-form .wpcf7-form-control select, .contact-form .wpcf7-form-control textarea {
   border: 1px solid #ccc; /* Neutral border color */
   border-radius: 4px;
   padding: 0.5rem 0.75rem;
@@ -950,18 +946,18 @@ footer p.legal a {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-.wpcf7-form-control input:focus, .wpcf7-form-control select:focus, .wpcf7-form-control textarea:focus {
+.contact-form .wpcf7-form-control input:focus, .contact-form .wpcf7-form-control select:focus, .contact-form .wpcf7-form-control textarea:focus {
   border-color: #0073e6; /* Highlight border on focus */
   box-shadow: 0 0 5px rgba(0, 115, 230, 0.5); /* Glow effect */
   outline: none;
 }
-.wpcf7-form-control input[type=submit] {
+.contact-form .wpcf7-form-control input[type=submit] {
   margin-top: 1rem;
   width: auto; /* Adjust width for the button */
   background-color: #222; /* Button background */
   color: white; /* Button text color */
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: bold;
@@ -969,15 +965,15 @@ footer p.legal a {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.wpcf7-form-control input[type=submit]:hover {
+.contact-form .wpcf7-form-control input[type=submit]:hover {
   background-color: #444; /* Darker background on hover */
   transform: scale(1.05); /* Slightly enlarge on hover */
 }
-.wpcf7-form-control input[type=submit]:active {
+.contact-form .wpcf7-form-control input[type=submit]:active {
   background-color: #000; /* Even darker background on click */
   transform: scale(1); /* Reset scale */
 }
-.wpcf7-form-control .wpcf7-response-output {
+.contact-form .wpcf7-form-control .wpcf7-response-output {
   text-align: left;
   font-weight: bold;
   margin-top: 1rem;
@@ -986,13 +982,13 @@ footer p.legal a {
   padding-left: 0.5rem;
   background-color: #f9f9f9; /* Light background for response */
 }
-.wpcf7-form-control .wpcf7-not-valid-tip {
+.contact-form .wpcf7-form-control .wpcf7-not-valid-tip {
   color: #e63946;
   font-size: 0.75rem;
   text-align: right;
   margin-top: 0.25rem;
 }
-.wpcf7-form-control div.screen-reader-response {
+.contact-form .wpcf7-form-control div.screen-reader-response {
   display: none; /* Hide screen reader response */
 }
 

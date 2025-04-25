@@ -18,7 +18,9 @@ $gutter: 10px; // Default gutter size for spacing
 $buttonBackground: $secondaryColor; // Default button background color
 $buttonHoverBackground: lighten($secondaryColor, 10%); // Lighter hover color for buttons
 $buttonTextColor: white; // Button text color
-$userInstructions: red;
-$userEntry: gray;
-$error: hotpink;
-$formwidth: 300px;
+
+//form colors 
+$userInstructions: #0e0d0d; /* Neutral color for labels */
+$userEntry: #555; /* Neutral color for input text */
+$error: #e63946; /* Red for error messages */
+$formwidth: 100%; /* Full width for responsiveness */

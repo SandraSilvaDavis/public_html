@@ -1,4 +1,75 @@
 //parent of all news items
 #wpnw-news-1 {
-    
+    .grid-date-post {display: none;}
+    img{width: 100%; height: auto;}
+    //single news item
+    .news {
+        border:solid $cardLine 1px;
+        border-radius: 10px;
+        background-color: $cardGrey;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    h3 {
+        margin:0;
+        padding: .5rem 0;
+        a { text-decoration:none;}
+        a:hover {color: &red;}
+    }
+    .news-more-link {
+        display: block;
+        text-decoration: none;
+        padding: .8rem;
+        margin: 1rem auto;
+        width: 200px;
+        background-color: rgba(0,0,0,0.1);
+        border: 1px solid $accentColor;
+        border-radius: 25px;
+        font-weight: $heavyWeight;
+        text-align: center;
+        box-shadow: 0 0 3px rgba(0,0,0,0.3);
+        &:hover {
+            background-color: $accentColor;
+            color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    }
+    //responsive
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 10px;
+}// end gallery view
+
+//wrap all the news items with a class of "news-story"
+.news-story {
+  max-width: 80rem;// 1280px
+  margin: auto;
+  padding: 0 $gutter;
+  img { width:100%; height: auto; display: block;}
+  .distance {
+    font-weight: $lightWeight;
+    font-size: 2rem;
+
+  }
+p {line-height: 150%;}
+
 }
+
+#wpnw-news-1 {position: relative;padding-bottom: 50px;}
+.news_pagination {
+    position: absolute;
+    bottom: 0;
+    padding: .8rem;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    background-color: #eee;
+    border-radius: 10px;
+    font-weight: $heavyWeight;
+    font-size: .85rem;
+    & :hover {
+        background-color: #ddd;
+    ;
+    }
+}
+

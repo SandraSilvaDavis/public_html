@@ -14,7 +14,7 @@
         margin:0;
         padding: .5rem 0;
         a { text-decoration:none;}
-        a:hover {color: &red;}
+        a:hover {color: $accentColor;}
     }
     .news-more-link {
         display: block;

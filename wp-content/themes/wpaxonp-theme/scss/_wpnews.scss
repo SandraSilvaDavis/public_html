@@ -1,38 +1,4 @@
 //parent of all news items
-#wpnw-news-1
-
-            &:hover {
-                color: $accentColor; /* Change color on hover */
-            }
-        }
-    }
-
-    .news-more-link {
-        display: block;
-        text-decoration: none; /* Remove underline */
-        padding: 0.8rem;
-        margin: 1rem auto; /* Center the button */
-        width: 200px; /* Fixed width for the button */
-        background-color: rgba(0, 0, 0, 0.1); /* Light background */
-        border-radius: 30px; /* Rounded button */
-        font-weight: $heavyWeight; /* Use variable for font weight */
-        text-align: center; /* Center-align text */
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-        transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-
-        &:hover {
-            background-color: $accentColor; /* Change background on hover */
-            color: #fff; /* Change text color on hover */
-            box-shadow: 0 0 9px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
-        }
-    }
-
-    // Additional styling for paragraphs inside news items
-    p {
-        font-size: 1rem; /* Adjust font size */
-        line-height: 1.6; /* Improve readability */
-        color: $textColor; /* Use variable for text color */
-        margin-bottom: 1rem; /* Add spacing below paragraphs */
-        text-align: justify; /* Justify text for better alignment */
-    }
+#wpnw-news-1 {
+    
 }

@@ -1,37 +1,77 @@
-//Parent of all News 
+// Parent of all News
 #wpnw-news-1 {
-.grid-date-post {display:none}
-img{width:100%;height: auto;}
-//single new item
-.news {
-    border:solid $cardLine 1px;
-    border-radius: 10px;
-    background-color: $cardGrey;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-h3 {
-    margin:0;
-    padding: .5rem 0;
-    a {text-decoration: none;}
-    a:hover {color: $accentColor;}
-}
-.news-more-link {
-    display:block;
-    text-decoration: none;
-    padding: .8rem;
-    margin: 1rem auto;
-    width: 200px;
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 30px;
-    font-weight: $heavyWeight;
-    box-shadow: 0 0 3px rgba(0,0,0,0.3);
-    &:hover {
-        background-color: $accentColor;
-        color: #fff;
-        box-shadow: 0 0 9px rgba(0,0,0,0.5);
+    .grid-date-post {
+        display: none; /* Hide the date post grid */
     }
-}
 
+    img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Add rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        margin-bottom: 1rem; /* Add spacing below images */
+    }
 
+    // Single news item
+    .news {
+        border: solid $cardLine 1px; /* Border color from variable */
+        border-radius: 10px; /* Rounded corners */
+        background-color: $cardGrey; /* Background color from variable */
+        margin-bottom: 1rem; /* Spacing between news items */
+        text-align: center; /* Center-align content */
+        padding: 1rem; /* Add padding inside the news item */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+
+        &:hover {
+            transform: scale(1.02); /* Slightly enlarge on hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+        }
+    }
+
+    h3 {
+        margin: 0;
+        padding: 0.5rem 0;
+        font-size: 1.5rem; /* Adjust font size */
+        font-weight: $heavyWeight; /* Use variable for font weight */
+
+        a {
+            text-decoration: none; /* Remove underline from links */
+            color: $textColor; /* Default link color */
+            transition: color 0.3s ease; /* Smooth color transition */
+
+            &:hover {
+                color: $accentColor; /* Change color on hover */
+            }
+        }
+    }
+
+    .news-more-link {
+        display: block;
+        text-decoration: none; /* Remove underline */
+        padding: 0.8rem;
+        margin: 1rem auto; /* Center the button */
+        width: 200px; /* Fixed width for the button */
+        background-color: rgba(0, 0, 0, 0.1); /* Light background */
+        border-radius: 30px; /* Rounded button */
+        font-weight: $heavyWeight; /* Use variable for font weight */
+        text-align: center; /* Center-align text */
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: $accentColor; /* Change background on hover */
+            color: #fff; /* Change text color on hover */
+            box-shadow: 0 0 9px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+        }
+    }
+
+    // Additional styling for paragraphs inside news items
+    p {
+        font-size: 1rem; /* Adjust font size */
+        line-height: 1.6; /* Improve readability */
+        color: $textColor; /* Use variable for text color */
+        margin-bottom: 1rem; /* Add spacing below paragraphs */
+        text-align: justify; /* Justify text for better alignment */
+    }
 }

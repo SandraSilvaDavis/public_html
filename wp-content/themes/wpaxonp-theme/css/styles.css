@@ -304,6 +304,9 @@ template {
 /* Neutral color for input text */
 /* Red for error messages */
 /* Full width for responsiveness */
+/* Red for card borders */
+/* Light grey for card backgrounds */
+/* Dark blue for card text */
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
@@ -990,6 +993,47 @@ footer p.legal a {
 }
 .contact-form .wpcf7-form-control div.screen-reader-response {
   display: none; /* Hide screen reader response */
+}
+
+#wpnw-news-1 .grid-date-post {
+  display: none;
+}
+#wpnw-news-1 img {
+  width: 100%;
+  height: auto;
+}
+#wpnw-news-1 .news {
+  border: solid #e63946 1px;
+  border-radius: 10px;
+  background-color: #f1faee;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#wpnw-news-1 h3 {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+#wpnw-news-1 h3 a {
+  text-decoration: none;
+}
+#wpnw-news-1 h3 a:hover {
+  color: #084060;
+}
+#wpnw-news-1 .news-more-link {
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  margin: 1rem auto;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+#wpnw-news-1 .news-more-link:hover {
+  background-color: #084060;
+  color: #fff;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 34.9375rem) {

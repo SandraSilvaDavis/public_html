@@ -1,44 +1,5 @@
-// Parent of all News
-#wpnw-news-1 {
-    .grid-date-post {
-        display: none; /* Hide the date post grid */
-    }
-
-    img {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 10px; /* Add rounded corners */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-        margin-bottom: 1rem; /* Add spacing below images */
-    }
-
-    // Single news item
-    .news {
-        border: solid $cardLine 1px; /* Border color from variable */
-        border-radius: 10px; /* Rounded corners */
-        background-color: $cardGrey; /* Background color from variable */
-        margin-bottom: 1rem; /* Spacing between news items */
-        text-align: center; /* Center-align content */
-        padding: 1rem; /* Add padding inside the news item */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-
-        &:hover {
-            transform: scale(1.02); /* Slightly enlarge on hover */
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-        }
-    }
-
-    h3 {
-        margin: 0;
-        padding: 0.5rem 0;
-        font-size: 1.5rem; /* Adjust font size */
-        font-weight: $heavyWeight; /* Use variable for font weight */
-
-        a {
-            text-decoration: none; /* Remove underline from links */
-            color: $textColor; /* Default link color */
-            transition: color 0.3s ease; /* Smooth color transition */
+//parent of all news items
+#wpnw-news-1
 
             &:hover {
                 color: $accentColor; /* Change color on hover */
